@@ -1,12 +1,13 @@
 import { createElement } from 'react';
 import { render } from 'react-dom';
-import { TimerView, AppState } from './components/main';
+import { WebView, AppState } from './components/webview';
 
 const content = document.getElementById('app');
 const appState = new AppState();
 
 export class MainApp {
-	public startApp() {
-		render(createElement(TimerView, { appState: appState }), content);
+	public startApp(forumObject: any) {
+		appState.forumObject = forumObject;
+		render(createElement(WebView, { appState: appState }), content);
 	}
 }
