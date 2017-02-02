@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>WebView</title>
+  <meta name="description" content="WebView">
+  <meta name="author" content="Dratic Actions">
+</head>
+
+<body>
+    <div className="app-top" id="app"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="build/client.bundle.js"></script>
+    <script>
+        var component = new WebView.Main.MainApp();
+        component.startApp();
+  </script>
+</body>
+</html>

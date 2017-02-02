@@ -1,0 +1,1 @@
+var WebView = require('expose?WebView!./../app/webview');
