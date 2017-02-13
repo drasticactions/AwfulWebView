@@ -1,1 +1,1 @@
-var WebView = require('expose?WebView!./../app/webview');
+var WebView = require('expose-loader?WebView!./../app/webview');
