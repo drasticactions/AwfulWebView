@@ -1,9 +1,9 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{68876258-F26E-4C3D-8532-4A3285B9E70D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwfulWebView", "src\AwfulWebView\AwfulWebView.csproj", "{4DCDD480-04F0-4934-91C4-683E214D78C6}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwfulWebView", "AwfulWebView\AwfulWebView.csproj", "{CECCF63D-88C7-4B0C-8A5D-4539D0CB37FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4DCDD480-04F0-4934-91C4-683E214D78C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DCDD480-04F0-4934-91C4-683E214D78C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DCDD480-04F0-4934-91C4-683E214D78C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DCDD480-04F0-4934-91C4-683E214D78C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CECCF63D-88C7-4B0C-8A5D-4539D0CB37FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECCF63D-88C7-4B0C-8A5D-4539D0CB37FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECCF63D-88C7-4B0C-8A5D-4539D0CB37FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CECCF63D-88C7-4B0C-8A5D-4539D0CB37FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{4DCDD480-04F0-4934-91C4-683E214D78C6} = {68876258-F26E-4C3D-8532-4A3285B9E70D}
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DBB355A-F84F-406E-BA2A-3305A5CFE186}
 	EndGlobalSection
 EndGlobal
