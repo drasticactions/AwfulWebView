@@ -22,11 +22,13 @@
 
   <ItemGroup>
     <None Remove="ClientApp\appState.ts" />
+    <None Remove="ClientApp\components\CustomCss.tsx" />
     <None Remove="ClientApp\testpost.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\appState.ts" />
+    <TypeScriptCompile Include="ClientApp\components\CustomCss.tsx" />
     <TypeScriptCompile Include="ClientApp\testpost.ts" />
   </ItemGroup>
 

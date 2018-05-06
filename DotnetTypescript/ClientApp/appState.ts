@@ -2,9 +2,16 @@
 import { TestPost } from './testpost';
 
 export class AppState {
+    @observable showAllPosts: boolean = false;
+    @observable theme: Themes = Themes.Light;
     @observable forumThreadPosts: ForumThreadPosts = new ForumThreadPosts();
+    @observable forumThreadOptions: ForumThreadOptions = new ForumThreadOptions();
+    cssBase: string = "";
     forumCommand(command: ForumCommand) {
         switch (command.Type) {
+            case "setupWebview":
+                this.forumThreadOptions = command.Command;
+                break;
             case "addTestPosts":
                 this.addTestPosts();
                 break;
@@ -12,6 +19,7 @@ export class AppState {
                 this.addPosts(command.Command);
                 break;
             case "reset":
+                this.showAllPosts = false;
                 this.forumThreadPosts = new ForumThreadPosts();
                 break;
         }
@@ -27,6 +35,12 @@ export class AppState {
     }
 }
 
+export enum Themes {
+    Light,
+    Dark,
+    YOSPOS
+}
+
 export class ForumCommand {
     Type: string;
     Command: any;
@@ -35,6 +49,14 @@ export class ForumCommand {
 export class ForumThreadPosts {
     @observable ForumThread: ForumThread = new ForumThread();
     @observable Posts: Post[] = [];
+}
+
+export class ForumThreadOptions {
+    InfinitePageScrolling: boolean = false;
+    ShowEmbeddedGifv: boolean = false;
+    ShowEmbeddedTweets: boolean = false;
+    ShowEmbeddedVideo: boolean = false;
+    AutoplayGif: boolean = false;
 }
 
 export class ForumThread {

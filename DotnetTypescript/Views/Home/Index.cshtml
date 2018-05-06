@@ -4,14 +4,26 @@
 
 @section head {
     <style>
-        body {
-            background-color: #F4F3F3;
-        }
+       
     </style>
 }
-
+<input id="cssBase" type="hidden" value="" />
 <div id="react-app"></div>
+<script>
+    var FromCSharp = function (command) {
+        window.app.props.appState.forumCommand(JSON.parse(command));
+        window.ForumTemplate();
+    }
 
+    var AddTestPosts = function () {
+        window.app.props.appState.forumCommand({"Type": "addTestPosts", "Command": null});
+        window.ForumTemplate();
+    }
+
+    var ToCSharp = function (command) {
+        window.external.notify(JSON.stringify(command));
+    }
+</script>
 @section scripts {
     <script src="~/dist/main.js" asp-append-version="true"></script>
 }

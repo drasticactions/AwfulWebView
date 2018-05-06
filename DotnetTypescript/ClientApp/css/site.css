@@ -358,13 +358,8 @@
 
 .post-container {
     margin-bottom: 15px;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: #FFFFFF;
-}
-
-.post-container.has-seen {
-    background-color: #E8EFF8;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 
 .bbc-block h4 {
@@ -442,7 +437,6 @@ img.timg.complete {
 
     .bbc-spoiler, .bbc-spoiler li {
         cursor: pointer;
-        background: #000
     }
 
 .bbc-spoiler img.timg {
@@ -454,8 +448,6 @@ img.timg.complete {
 }
 
 .bbc-spoiler, .bbc-spoiler li {
-    background-color: #222;
-    color: #222;
     border-radius: 0;
     padding: 1px 0 2px
 }
@@ -469,7 +461,6 @@ img.timg.complete {
 }
 
 .bbc-spoiler.reveal li, .bbc-spoiler.reveal, .bbc-spoiler.stay {
-        background-color: #fafafa;
         cursor: pointer;
         box-shadow: none
 }

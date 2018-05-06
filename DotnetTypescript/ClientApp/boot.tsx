@@ -14,7 +14,7 @@ import { TestPost } from './testpost';
 import { Home } from './components/Home';
 
 let routes = RoutesModule.routes;
-
+const cssBaseView = (document.getElementById('cssBase') as HTMLInputElement).value;
 declare var module: any;
 const appState = new AppState();
 
@@ -28,6 +28,7 @@ function renderApp() {
     // This code starts up the React app when it runs in a browser. It sets up the routing
     // configuration and injects the app into a DOM element.
     let windowblah = window as any;
+    appState.cssBase = cssBaseView;
     ReactDOM.render(
         <AppContainer>
             <Home ref={(element) => { windowblah.app = element }} appState={stores.appState}></Home>
