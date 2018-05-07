@@ -1,9 +1,9 @@
 ﻿import { observable } from 'mobx';
 import { TestPost } from './testpost';
+import { some } from 'lodash';
 
 export class AppState {
     @observable showAllPosts: boolean = false;
-    @observable theme: Themes = Themes.Light;
     @observable forumThreadPosts: ForumThreadPosts = new ForumThreadPosts();
     @observable forumThreadOptions: ForumThreadOptions = new ForumThreadOptions();
     cssBase: string = "";
@@ -25,20 +25,21 @@ export class AppState {
         }
     }
     addPosts(forumThreadPosts: ForumThreadPosts) {
+        if (!this.showAllPosts) {
+            this.showAllPosts = !some(forumThreadPosts.Posts, (u) => u.HasSeen);
+        }
         this.forumThreadPosts.ForumThread = forumThreadPosts.ForumThread;
         this.forumThreadPosts.Posts = this.forumThreadPosts.Posts.concat(forumThreadPosts.Posts);
     }
     addTestPosts() {
         var testPost = new TestPost();
+        this.forumThreadOptions.Theme = 1;
         this.forumThreadPosts.ForumThread = testPost.testPostOne.ForumThread;
+        if (!this.showAllPosts) {
+            this.showAllPosts = !some(testPost.testPostTwo.Posts, (u) => u.HasSeen);
+        }
         this.forumThreadPosts.Posts = this.forumThreadPosts.Posts.concat(testPost.testPostTwo.Posts);
     }
-}
-
-export enum Themes {
-    Light,
-    Dark,
-    YOSPOS
 }
 
 export class ForumCommand {
@@ -57,6 +58,7 @@ export class ForumThreadOptions {
     ShowEmbeddedTweets: boolean = false;
     ShowEmbeddedVideo: boolean = false;
     AutoplayGif: boolean = false;
+    @observable Theme: any;
 }
 
 export class ForumThread {

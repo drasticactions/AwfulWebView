@@ -2,7 +2,7 @@
 import { RouteComponentProps } from 'react-router';
 import { observable } from 'mobx';
 import { observer, inject } from 'mobx-react';
-import { AppState, ForumCommand, Themes } from '../appState';
+import { AppState, ForumCommand } from '../appState';
 
 @inject("appState") @observer
 export class CustomCss extends React.Component<{ appState: AppState }, {}> {
@@ -13,14 +13,15 @@ export class CustomCss extends React.Component<{ appState: AppState }, {}> {
 
     render() {
         let customCssPath = "";
-        switch (this.props.appState.theme) {
-            case Themes.Light:
+        console.log(`Theme: ${this.props.appState.forumThreadOptions.Theme}`);
+        switch (this.props.appState.forumThreadOptions.Theme) {
+            case 0:
                 customCssPath = "/css/light.css";
                 break;
-            case Themes.Dark:
+            case 1:
                 customCssPath = "/css/dark.css";
                 break;
-            case Themes.YOSPOS:
+            case 2:
                 customCssPath = "/css/yospos.css";
                 break;
         }
