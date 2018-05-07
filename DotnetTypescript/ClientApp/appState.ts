@@ -1,6 +1,6 @@
 ﻿import { observable } from 'mobx';
 import { TestPost } from './testpost';
-import { some } from 'lodash';
+import { some, every } from 'lodash';
 
 export class AppState {
     @observable showAllPosts: boolean = false;
@@ -25,7 +25,11 @@ export class AppState {
         }
     }
     addPosts(forumThreadPosts: ForumThreadPosts) {
-        if (!this.showAllPosts) {
+        console.log(this.forumThreadPosts.Posts.length);
+        if (this.forumThreadPosts.Posts.length <= 0) {
+            this.showAllPosts = every(forumThreadPosts.Posts, (u) => u.HasSeen) || every(forumThreadPosts.Posts, (u) => !u.HasSeen);
+        }
+        else if (!this.showAllPosts) {
             this.showAllPosts = !some(forumThreadPosts.Posts, (u) => u.HasSeen);
         }
         this.forumThreadPosts.ForumThread = forumThreadPosts.ForumThread;
@@ -34,8 +38,12 @@ export class AppState {
     addTestPosts() {
         var testPost = new TestPost();
         this.forumThreadOptions.Theme = 1;
+        console.log(this.forumThreadPosts.Posts.length);
         this.forumThreadPosts.ForumThread = testPost.testPostOne.ForumThread;
-        if (!this.showAllPosts) {
+        if (this.forumThreadPosts.Posts.length <= 0) {
+            this.showAllPosts = every(testPost.testPostTwo.Posts, (u) => u.HasSeen) || every(testPost.testPostTwo.Posts, (u) => !u.HasSeen);
+        }
+        else if (!this.showAllPosts) {
             this.showAllPosts = !some(testPost.testPostTwo.Posts, (u) => u.HasSeen);
         }
         this.forumThreadPosts.Posts = this.forumThreadPosts.Posts.concat(testPost.testPostTwo.Posts);

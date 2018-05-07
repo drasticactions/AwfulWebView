@@ -39,6 +39,7 @@ export class Home extends React.Component<{ appState: AppState }, {}> {
 
     componentDidUpdate() {
         try {
+            console.log("Update!");
             (window as any).ForumTemplate();
             (window as any).timg.scan("body");
         } catch (e) {
@@ -68,14 +69,7 @@ export class Home extends React.Component<{ appState: AppState }, {}> {
     renderPostHtml(post: any) {
         let test = this.parser.parse(post.PostHtml);
         return <div className="post-body">
-            <LazyRender offset={1000} content={test} placeholder={<div />} onRender={() => {
-                try {
-                    (window as any).ForumTemplate();
-                    (window as any).timg.scan("body");
-                } catch (e) {
-
-                }
-            }} />
+            {test}
         </div>
     }
 

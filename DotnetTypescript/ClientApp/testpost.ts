@@ -86,7 +86,7 @@
                 "PostId": 481750623,
                 "PostIndex": 2,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -112,7 +112,7 @@
                 "PostId": 481750625,
                 "PostIndex": 3,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -138,7 +138,7 @@
                 "PostId": 481750629,
                 "PostIndex": 4,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -164,7 +164,7 @@
                 "PostId": 481750644,
                 "PostIndex": 5,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -190,7 +190,7 @@
                 "PostId": 481750650,
                 "PostIndex": 6,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -216,7 +216,7 @@
                 "PostId": 481750654,
                 "PostIndex": 7,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -242,7 +242,7 @@
                 "PostId": 481750657,
                 "PostIndex": 8,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -268,7 +268,7 @@
                 "PostId": 481750661,
                 "PostIndex": 9,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -294,7 +294,7 @@
                 "PostId": 481750662,
                 "PostIndex": 10,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -320,7 +320,7 @@
                 "PostId": 481750682,
                 "PostIndex": 11,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -346,7 +346,7 @@
                 "PostId": 481750696,
                 "PostIndex": 12,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -372,7 +372,7 @@
                 "PostId": 481750697,
                 "PostIndex": 13,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -398,7 +398,7 @@
                 "PostId": 481750748,
                 "PostIndex": 14,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -424,7 +424,7 @@
                 "PostId": 481750758,
                 "PostIndex": 15,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -450,7 +450,7 @@
                 "PostId": 481750780,
                 "PostIndex": 16,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -476,7 +476,7 @@
                 "PostId": 481750785,
                 "PostIndex": 17,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -502,7 +502,7 @@
                 "PostId": 481750790,
                 "PostIndex": 18,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -528,7 +528,7 @@
                 "PostId": 481750792,
                 "PostIndex": 19,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -554,7 +554,7 @@
                 "PostId": 481750807,
                 "PostIndex": 20,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -580,7 +580,7 @@
                 "PostId": 481750815,
                 "PostIndex": 21,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -606,7 +606,7 @@
                 "PostId": 481750816,
                 "PostIndex": 22,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -632,7 +632,7 @@
                 "PostId": 481750818,
                 "PostIndex": 23,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -658,7 +658,7 @@
                 "PostId": 481750821,
                 "PostIndex": 24,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -684,7 +684,7 @@
                 "PostId": 481750848,
                 "PostIndex": 25,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -710,7 +710,7 @@
                 "PostId": 481750855,
                 "PostIndex": 26,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -736,7 +736,7 @@
                 "PostId": 481750859,
                 "PostIndex": 27,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -762,7 +762,7 @@
                 "PostId": 481750864,
                 "PostIndex": 28,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -788,7 +788,7 @@
                 "PostId": 481750867,
                 "PostIndex": 29,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -814,7 +814,7 @@
                 "PostId": 481750878,
                 "PostIndex": 30,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -840,7 +840,7 @@
                 "PostId": 481750881,
                 "PostIndex": 31,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -866,7 +866,7 @@
                 "PostId": 481750885,
                 "PostIndex": 32,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -892,7 +892,7 @@
                 "PostId": 481750891,
                 "PostIndex": 33,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -918,7 +918,7 @@
                 "PostId": 481750896,
                 "PostIndex": 34,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -944,7 +944,7 @@
                 "PostId": 481750900,
                 "PostIndex": 35,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -970,7 +970,7 @@
                 "PostId": 481750904,
                 "PostIndex": 36,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -996,7 +996,7 @@
                 "PostId": 481750911,
                 "PostIndex": 37,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1022,7 +1022,7 @@
                 "PostId": 481750924,
                 "PostIndex": 38,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1048,7 +1048,7 @@
                 "PostId": 481750931,
                 "PostIndex": 39,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1074,7 +1074,7 @@
                 "PostId": 481750933,
                 "PostIndex": 40,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             }
         ]
@@ -1110,7 +1110,7 @@
             "ThreadId": 3606621,
             "ForumId": 0,
             "ForumEntity": null,
-            "HasSeen": false,
+            "HasSeen": true,
             "IsBookmark": false,
             "Html": null,
             "IsPrivateMessage": false,
@@ -1136,7 +1136,7 @@
                 "PostQuoteLink": null,
                 "PostLink": null,
                 "PostFormatted": null,
-                "PostHtml": "\n\n<!-- google_ad_section_start -->\n<img src=\"http://i.imgur.com/Rn10Ypq.gif\" alt=\"\" class=\"img\" border=\"0\"><br>\n<br>\nBecause they <img src=\"https://fi.somethingawful.com/images/smilies/smile.gif\" border=\"0\" alt=\"\" title=\":)\"> made <a href=\"http://www.youtube.com/watch?v=d7RgBe8Rrrg\" target=\"_blank\" rel=\"nofollow\">this</a> music video.<br>\n<br>\n<b>The end</b><br>\n<br>\n<span class=\"bbc-spoiler\">EDIT: They are not H sker D</span><br>\n<br>\nEDIT 2:<br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?threadid=3606621\" target=\"_blank\" rel=\"nofollow\">This thread</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?threadid=3532200&amp;pagenumber=5\" target=\"_blank\" rel=\"nofollow\">test in forum post</a><br>\n<br>\n<a href=\"http://weekly.ascii.jp/\" target=\"_blank\" rel=\"nofollow\">test link outside of the forum</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/search.php?action=do_search_posthistory&amp;userid=41741\" target=\"_blank\" rel=\"nofollow\">Post history</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/banlist.php?userid=41741\" target=\"_blank\" rel=\"nofollow\">Rap sheet User id</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/banlist.php\" target=\"_blank\" rel=\"nofollow\">Rap sheet</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?goto=post&amp;postid=426091228\" target=\"_blank\" rel=\"nofollow\">Direct post</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?goto=post&amp;postid=42606\" target=\"_blank\" rel=\"nofollow\">Broken post url</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?threadid=35300&amp;pagenumber=5\" target=\"_blank\" rel=\"nofollow\">Broken thread link</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/member.php?action=getinfo&amp;userid=133459789\" target=\"_blank\" rel=\"nofollow\">Broken user</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/banlist.php?userid=133459789\" target=\"_blank\" rel=\"nofollow\">Broken Rap sheet User id</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/search.php?action=do_search_posthistory&amp;userid=133459789\" target=\"_blank\" rel=\"nofollow\">Post history</a><br>\n<br>\n<a href=\"https://twitter.com/darth/status/697278646751522817\" target=\"_blank\" rel=\"nofollow\">https://twitter.com/darth/status/697278646751522817</a><br>\n<br>\n<a href=\"https://youtu.be/ES_dHXMhOHU\" target=\"_blank\" rel=\"nofollow\">https://youtu.be/ES_dHXMhOHU</a><br>\n<br>\n<iframe class=\"youtube-player\" type=\"text/html\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/ES_dHXMhOHU?fs=1&amp;fs=1&amp;theme=dark\" frameborder=\"0\" allowfullscreen=\"\"></iframe><br>\n<br>\n<iframe class=\"youtube-player\" type=\"text/html\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/d7RgBe8Rrrg?fs=1&amp;fs=1&amp;theme=dark\" frameborder=\"0\" allowfullscreen=\"\"></iframe><br>\n<br>\n<a href=\"http://twitter.com/MattGarrahan/status/694336318038491140\" target=\"_blank\" rel=\"nofollow\">http://twitter.com/MattGarrahan/sta...336318038491140</a>\n<!-- google_ad_section_end -->\n\n<p class=\"editedby\"><span>Drastic Actions fucked around with this message at Feb 24, 2018 around 19:36</span>\n",
+                "PostHtml": "\n\n<!-- google_ad_section_start -->\n<img src=\"http://i.imgur.com/Rn10Ypq.gif\" alt=\"\" class=\"img\" border=\"0\"><br>\n<br>\nBecause they <img src=\"https://fi.somethingawful.com/images/smilies/smile.gif\" border=\"0\" alt=\"\" title=\":)\"> made <a href=\"http://www.youtube.com/watch?v=d7RgBe8Rrrg\" target=\"_blank\" rel=\"nofollow\">this</a> music video.<br>\n<br>\n<b>The end</b><br>\n<br>\n<span class=\"bbc-spoiler\">EDIT: They are not H sker D</span><br>\n<br>\nEDIT 2:<br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?threadid=3606621\" target=\"_blank\" rel=\"nofollow\">This thread</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?threadid=3532200&amp;pagenumber=5\" target=\"_blank\" rel=\"nofollow\">test in forum post</a><br>\n<br>\n<a href=\"http://weekly.ascii.jp/\" target=\"_blank\" rel=\"nofollow\">test link outside of the forum</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/search.php?action=do_search_posthistory&amp;userid=41741\" target=\"_blank\" rel=\"nofollow\">Post history</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/banlist.php?userid=41741\" target=\"_blank\" rel=\"nofollow\">Rap sheet User id</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/banlist.php\" target=\"_blank\" rel=\"nofollow\">Rap sheet</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?goto=post&amp;postid=426091228\" target=\"_blank\" rel=\"nofollow\">Direct post</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?goto=post&amp;postid=42606\" target=\"_blank\" rel=\"nofollow\">Broken post url</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/showthread.php?threadid=35300&amp;pagenumber=5\" target=\"_blank\" rel=\"nofollow\">Broken thread link</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/member.php?action=getinfo&amp;userid=133459789\" target=\"_blank\" rel=\"nofollow\">Broken user</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/banlist.php?userid=133459789\" target=\"_blank\" rel=\"nofollow\">Broken Rap sheet User id</a><br>\n<br>\n<a href=\"http://forums.somethingawful.com/search.php?action=do_search_posthistory&amp;userid=133459789\" target=\"_blank\" rel=\"nofollow\">Post history</a><br>\n<br>\n<Tweet tweetId=\"697278646751522817\"></Tweet><br>\n<br>\n<a href=\"https://youtu.be/ES_dHXMhOHU\" target=\"_blank\" rel=\"nofollow\">https://youtu.be/ES_dHXMhOHU</a><br>\n<br>\n<iframe class=\"youtube-player\" type=\"text/html\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/ES_dHXMhOHU?fs=1&amp;fs=1&amp;theme=dark\" frameborder=\"0\" allowfullscreen=\"\"></iframe><br>\n<br>\n<iframe class=\"youtube-player\" type=\"text/html\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/d7RgBe8Rrrg?fs=1&amp;fs=1&amp;theme=dark\" frameborder=\"0\" allowfullscreen=\"\"></iframe><br>\n<br>\n<a href=\"http://twitter.com/MattGarrahan/status/694336318038491140\" target=\"_blank\" rel=\"nofollow\">http://twitter.com/MattGarrahan/sta...336318038491140</a>\n<!-- google_ad_section_end -->\n\n<p class=\"editedby\"><span>Drastic Actions fucked around with this message at Feb 24, 2018 around 19:36</span>\n",
                 "PostMarkdown": null,
                 "PostId": 425261617,
                 "PostIndex": 1,
@@ -1167,7 +1167,7 @@
                 "PostId": 426216208,
                 "PostIndex": 2,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1193,7 +1193,7 @@
                 "PostId": 426566453,
                 "PostIndex": 3,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1219,7 +1219,7 @@
                 "PostId": 427201035,
                 "PostIndex": 4,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1245,7 +1245,7 @@
                 "PostId": 428856072,
                 "PostIndex": 5,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1271,7 +1271,7 @@
                 "PostId": 429378532,
                 "PostIndex": 6,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1297,7 +1297,7 @@
                 "PostId": 429378983,
                 "PostIndex": 7,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1323,7 +1323,7 @@
                 "PostId": 429379102,
                 "PostIndex": 8,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1349,7 +1349,7 @@
                 "PostId": 429752728,
                 "PostIndex": 9,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1375,7 +1375,7 @@
                 "PostId": 431027935,
                 "PostIndex": 10,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1401,7 +1401,7 @@
                 "PostId": 437415104,
                 "PostIndex": 11,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1427,7 +1427,7 @@
                 "PostId": 438039849,
                 "PostIndex": 12,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1453,7 +1453,7 @@
                 "PostId": 443946178,
                 "PostIndex": 13,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1479,7 +1479,7 @@
                 "PostId": 445089476,
                 "PostIndex": 14,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1505,7 +1505,7 @@
                 "PostId": 445294886,
                 "PostIndex": 15,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1531,7 +1531,7 @@
                 "PostId": 446065931,
                 "PostIndex": 16,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1557,7 +1557,7 @@
                 "PostId": 446066303,
                 "PostIndex": 17,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1583,7 +1583,7 @@
                 "PostId": 446067579,
                 "PostIndex": 18,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1609,7 +1609,7 @@
                 "PostId": 446068885,
                 "PostIndex": 19,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1635,7 +1635,7 @@
                 "PostId": 454554990,
                 "PostIndex": 20,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1661,7 +1661,7 @@
                 "PostId": 455010638,
                 "PostIndex": 21,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1687,7 +1687,7 @@
                 "PostId": 455336707,
                 "PostIndex": 22,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1713,7 +1713,7 @@
                 "PostId": 456243566,
                 "PostIndex": 23,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1739,7 +1739,7 @@
                 "PostId": 461101494,
                 "PostIndex": 24,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1765,7 +1765,7 @@
                 "PostId": 461103458,
                 "PostIndex": 25,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1791,7 +1791,7 @@
                 "PostId": 462796845,
                 "PostIndex": 26,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1817,7 +1817,7 @@
                 "PostId": 470029890,
                 "PostIndex": 27,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             },
             {
@@ -1843,7 +1843,7 @@
                 "PostId": 470030121,
                 "PostIndex": 28,
                 "PostDivString": null,
-                "HasSeen": false,
+                "HasSeen": true,
                 "IsQuoting": false
             }
         ]
