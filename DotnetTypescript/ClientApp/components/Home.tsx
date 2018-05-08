@@ -42,6 +42,7 @@ export class Home extends React.Component<{ appState: AppState }, {}> {
             console.log("Update!");
             (window as any).ForumTemplate();
             (window as any).timg.scan("body");
+            (window as any).GifWrap();
         } catch (e) {
 
         }
