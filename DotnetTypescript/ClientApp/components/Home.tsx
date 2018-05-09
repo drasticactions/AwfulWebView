@@ -11,6 +11,7 @@ import { AppState, ForumCommand } from '../appState';
 import Waypoint = require('react-waypoint');
 import LazyRender from 'react-lazily-render';
 import { CustomCss } from './CustomCss';
+import Fader from 'react-fader';
 
 @inject("appState") @observer 
 export class Home extends React.Component<{ appState: AppState }, {}> {
@@ -134,6 +135,7 @@ export class Home extends React.Component<{ appState: AppState }, {}> {
     }
 
     render() {
+        //console.log(Fader);
         let debug = this.isDebug ? <div>DEBUG</div> : <div />
         let { CurrentPage, TotalPages, } = this.props.appState.forumThreadPosts.ForumThread;
         let previousPostsButton = this.props.appState.forumThreadPosts.Posts.length > 0
