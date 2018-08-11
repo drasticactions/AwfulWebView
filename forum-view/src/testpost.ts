@@ -34,7 +34,7 @@
             "Html": null,
             "IsPrivateMessage": false,
             "OrderNumber": 0,
-            "Posts": null
+            "Posts": []
         },
         "Posts": [
             {
@@ -1116,7 +1116,7 @@
             "Html": null,
             "IsPrivateMessage": false,
             "OrderNumber": 0,
-            "Posts": null
+            "Posts": []
         },
         "Posts": [
             {

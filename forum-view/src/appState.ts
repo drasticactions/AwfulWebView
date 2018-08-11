@@ -3,14 +3,20 @@ import { TestPost } from './testpost';
 import { some, every } from 'lodash';
 
 export class AppState {
+    urlBase: string = "";
     @observable showAllPosts: boolean = false;
-    @observable forumThreadPosts: ForumThreadPosts = new ForumThreadPosts();
+    @observable forumThreadPosts: ForumThread = new ForumThread();
     @observable forumThreadOptions: ForumThreadOptions = new ForumThreadOptions();
+    @observable themeClass: string = '';
     cssBase: string = "";
     forumCommand(command: ForumCommand) {
         switch (command.Type) {
             case "setupWebview":
                 this.forumThreadOptions = command.Command;
+                this.setupTheme();
+                break;
+            case "changeTheme":
+                this.themeClass = command.Command;
                 break;
             case "addTestPosts":
                 this.addTestPosts();
@@ -23,58 +29,74 @@ export class AppState {
                 break;
             case "reset":
                 this.showAllPosts = false;
-                this.forumThreadPosts = new ForumThreadPosts();
+                this.forumThreadPosts = new ForumThread();
                 break;
         }
     }
 
-    addPosts(forumThreadPosts: ForumThreadPosts) {
-        console.log(this.forumThreadPosts.Posts.length);
+    setupTheme() {
+        switch(this.forumThreadOptions.Theme) {
+            case Themes.Light:
+                this.themeClass = "";
+                break;
+            case Themes.Dark:
+                this.themeClass = "theme-alt";
+                break;
+            case Themes.YOSPOS:
+                this.themeClass = "theme-alt yospos";
+                break;
+        }
+        document.getElementsByTagName("BODY")[0].className = this.themeClass;
+    }
+
+    addPosts(forumThreadPosts: ForumThread) {
         if (this.forumThreadPosts.Posts.length <= 0) {
             this.showAllPosts = every(forumThreadPosts.Posts, (u) => u.HasSeen) || every(forumThreadPosts.Posts, (u) => !u.HasSeen);
         }
         else if (!this.showAllPosts) {
             this.showAllPosts = !some(forumThreadPosts.Posts, (u) => u.HasSeen);
         }
-        this.forumThreadPosts.ForumThread = forumThreadPosts.ForumThread;
-        this.forumThreadPosts.Posts = this.forumThreadPosts.Posts.concat(forumThreadPosts.Posts);
+        this.forumThreadPosts = forumThreadPosts;
     }
 
     addTestPosts() {
         var testPost = new TestPost();
-        this.forumThreadOptions.Theme = 1;
-        this.forumThreadPosts.ForumThread = testPost.testPostOne.ForumThread;
+        this.forumThreadOptions.Theme = Themes.Dark;
+        this.setupTheme();
+        this.forumThreadPosts = testPost.testPostOne.ForumThread;
         if (this.forumThreadPosts.Posts.length <= 0) {
             this.showAllPosts = every(testPost.testPostTwo.Posts, (u) => u.HasSeen) || every(testPost.testPostTwo.Posts, (u) => !u.HasSeen);
         }
         else if (!this.showAllPosts) {
             this.showAllPosts = !some(testPost.testPostTwo.Posts, (u) => u.HasSeen);
         }
-        this.forumThreadPosts.Posts = this.forumThreadPosts.Posts.concat(testPost.testPostTwo.Posts);
+        this.forumThreadPosts.Posts = testPost.testPostTwo.Posts;
     }
 
     addTestPosts2() {
         var testPost = new TestPost();
-        this.forumThreadOptions.Theme = 1;
-        this.forumThreadPosts.ForumThread = testPost.testPostOne.ForumThread;
+        this.forumThreadOptions.Theme = Themes.Light;
+        this.setupTheme();
+        this.forumThreadPosts = testPost.testPostOne.ForumThread;
         if (this.forumThreadPosts.Posts.length <= 0) {
             this.showAllPosts = every(testPost.testPostOne.Posts, (u) => u.HasSeen) || every(testPost.testPostOne.Posts, (u) => !u.HasSeen);
         }
         else if (!this.showAllPosts) {
             this.showAllPosts = !some(testPost.testPostOne.Posts, (u) => u.HasSeen);
         }
-        this.forumThreadPosts.Posts = this.forumThreadPosts.Posts.concat(testPost.testPostOne.Posts);
+        this.forumThreadPosts.Posts = testPost.testPostOne.Posts;
     }
+}
+
+export enum Themes {
+    Light,
+    Dark,
+    YOSPOS
 }
 
 export class ForumCommand {
     Type: string;
     Command: any;
-}
-
-export class ForumThreadPosts {
-    @observable ForumThread: ForumThread = new ForumThread();
-    @observable Posts: Post[] = [];
 }
 
 export class ForumThreadOptions {
@@ -83,7 +105,7 @@ export class ForumThreadOptions {
     ShowEmbeddedTweets: boolean = false;
     ShowEmbeddedVideo: boolean = false;
     AutoplayGif: boolean = false;
-    @observable Theme: any;
+    @observable Theme: Themes = Themes.Light;
 }
 
 export class ForumThread {
@@ -98,6 +120,7 @@ export class ForumThread {
     IsPrivateMessage: boolean;
     IsLoggedIn: boolean;
     OrderNumber: number;
+    @observable Posts: Post[] = [];
 }
 
 export class Post {

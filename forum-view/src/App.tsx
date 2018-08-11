@@ -9,7 +9,8 @@ import { AppState } from './appState';
 import Img from 'react-image';
 import * as HtmlToReactParser from 'html-to-react';
 
-import logo from './logo.svg';
+import darklogo from './images/grenade-dark.png';
+import lightlogo from './images/grenade-light.png';
 
 @observer
 class App extends React.Component {
@@ -18,10 +19,10 @@ class App extends React.Component {
   @observable appState = new AppState();
   isDebug: boolean;
   nativeForumCommand: any;
-  @observable themeClass: string = '';
 
   constructor(props) {
     super(props);
+    this.appState.urlBase = document.getElementsByTagName("BODY")[0].getAttribute("data-base");
     let internalWindow = window as any;
     this.isDebug = internalWindow.ToCSharp == null;
     this.nativeForumCommand = internalWindow.ToCSharp;
@@ -55,7 +56,7 @@ class App extends React.Component {
     return <div className="user-container">
       <Img className="user-avatar" src={user.AvatarLink} />
       <div>
-        <span className={`user-info ${this.themeClass}`}>
+        <span className={`user-info ${this.appState.themeClass}`}>
           <div className={roles}>{user.Username}</div>
           <small>{new Date(user.DateJoined).toLocaleDateString()}</small>
         </span>
@@ -88,10 +89,10 @@ class App extends React.Component {
 
   renderPostFooter(post: any) {
     //if (!this.appState.forumThreadPosts.ForumThread.IsLoggedIn) return <div />
-    let editButton = post.User.IsCurrentUserPost ? <button className={`btn btn-default ${this.themeClass}`} onClick={() => this.showEditPage(post)} style={{ marginRight: "5px" }} >Edit</button> : <div />
+    let editButton = post.User.IsCurrentUserPost ? <button className={`btn btn-default ${this.appState.themeClass}`} onClick={() => this.showEditPage(post)} style={{ marginRight: "5px" }} >Edit</button> : <div />
     return <div className="post-footer">
       {editButton}
-      <button className={`btn btn-default ${this.themeClass}`} onClick={() => this.showQuotePage(post)}
+      <button className={`btn btn-default ${this.appState.themeClass}`} onClick={() => this.showQuotePage(post)}
       >Quote</button>
     </div>
   }
@@ -120,17 +121,27 @@ class App extends React.Component {
     </div>
   }
 
+  renderNoPostsScreen() {
+    let isLight = this.appState.themeClass.indexOf("theme-alt") > -1;
+    return <div className="loader">
+    <div className="center-block-loader">
+        <img className="center-block-loader img-responsive-loader" src={isLight ? lightlogo : darklogo} />
+    </div>
+</div>
+  }
+
   public render() {
     let debug = this.isDebug ? <div>DEBUG</div> : <div />
-    let { CurrentPage, TotalPages, } = this.appState.forumThreadPosts.ForumThread;
+    let isLight = this.appState.themeClass.indexOf("theme-alt") > -1;
+    let { CurrentPage, TotalPages, } = this.appState.forumThreadPosts;
+    console.log(this.appState.forumThreadPosts.Posts.length); 
     let previousPostsButton = this.appState.forumThreadPosts.Posts.length > 0
       && !this.appState.showAllPosts ? this.renderShowAllPostsButton() : <div />;
-    let noPostsScreen = <img src={logo} className="img-responsive logo-center" alt="logo" />;
-    return this.appState.forumThreadPosts.Posts.length > 0 ? <div className={`thread-posts ${this.themeClass}`}>
+    return this.appState.forumThreadPosts.Posts.length > 0 ? <div className={`thread-posts ${this.appState.themeClass}`}>
       {debug}
       {previousPostsButton}
       {this.appState.forumThreadPosts.Posts.length > 0 ? this.appState.forumThreadPosts.Posts.map(u => this.renderPost(u)) : <div />}
-    </div> : noPostsScreen;
+    </div> : this.renderNoPostsScreen();
   }
 }
 
