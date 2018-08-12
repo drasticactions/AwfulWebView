@@ -50,12 +50,7 @@ export class AppState {
     }
 
     addPosts(forumThreadPosts: ForumThread) {
-        if (this.forumThreadPosts.Posts.length <= 0) {
-            this.showAllPosts = every(forumThreadPosts.Posts, (u) => u.HasSeen) || every(forumThreadPosts.Posts, (u) => !u.HasSeen);
-        }
-        else if (!this.showAllPosts) {
-            this.showAllPosts = !some(forumThreadPosts.Posts, (u) => u.HasSeen);
-        }
+        this.showAllPosts = !some(forumThreadPosts.Posts, (u) => u.HasSeen);
         this.forumThreadPosts = forumThreadPosts;
     }
 
@@ -64,12 +59,7 @@ export class AppState {
         this.forumThreadOptions.Theme = Themes.Dark;
         this.setupTheme();
         this.forumThreadPosts = testPost.testPostOne.ForumThread;
-        if (this.forumThreadPosts.Posts.length <= 0) {
-            this.showAllPosts = every(testPost.testPostTwo.Posts, (u) => u.HasSeen) || every(testPost.testPostTwo.Posts, (u) => !u.HasSeen);
-        }
-        else if (!this.showAllPosts) {
-            this.showAllPosts = !some(testPost.testPostTwo.Posts, (u) => u.HasSeen);
-        }
+        this.showAllPosts = !some(testPost.testPostTwo.Posts, (u) => u.HasSeen);
         this.forumThreadPosts.Posts = testPost.testPostTwo.Posts;
     }
 
@@ -78,12 +68,7 @@ export class AppState {
         this.forumThreadOptions.Theme = Themes.Light;
         this.setupTheme();
         this.forumThreadPosts = testPost.testPostOne.ForumThread;
-        if (this.forumThreadPosts.Posts.length <= 0) {
-            this.showAllPosts = every(testPost.testPostOne.Posts, (u) => u.HasSeen) || every(testPost.testPostOne.Posts, (u) => !u.HasSeen);
-        }
-        else if (!this.showAllPosts) {
-            this.showAllPosts = !some(testPost.testPostOne.Posts, (u) => u.HasSeen);
-        }
+        this.showAllPosts = !some(testPost.testPostOne.Posts, (u) => u.HasSeen);
         this.forumThreadPosts.Posts = testPost.testPostOne.Posts;
     }
 }

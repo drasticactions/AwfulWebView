@@ -8,9 +8,7 @@ import { observable } from 'mobx';
 import { AppState } from './appState';
 import Img from 'react-image';
 import * as HtmlToReactParser from 'html-to-react';
-
-import darklogo from './images/grenade-dark.png';
-import lightlogo from './images/grenade-light.png';
+import { lightlogo, darklogo } from './images';
 
 @observer
 class App extends React.Component {
@@ -84,11 +82,12 @@ class App extends React.Component {
   }
 
   showAllPostsButton() {
+    console.log("touched");
     this.appState.showAllPosts = true;
   }
 
   renderPostFooter(post: any) {
-    //if (!this.appState.forumThreadPosts.ForumThread.IsLoggedIn) return <div />
+    if (!this.appState.forumThreadPosts.IsLoggedIn) return <div />
     let editButton = post.User.IsCurrentUserPost ? <button className={`btn btn-default ${this.appState.themeClass}`} onClick={() => this.showEditPage(post)} style={{ marginRight: "5px" }} >Edit</button> : <div />
     return <div className="post-footer">
       {editButton}
@@ -98,7 +97,7 @@ class App extends React.Component {
   }
 
   renderShowAllPostsButton() {
-    return <button style={{ width: "100%" }} onClick={() => this.showAllPostsButton()}>Show Previous Posts</button>
+    return <button className={`btn btn-default ${this.appState.themeClass}`} style={{ marginTop: 0, width: "100%" }} onClick={() => this.showAllPostsButton()}>Show Previous Posts</button>
   }
 
   renderPost(post: any) {
@@ -124,17 +123,17 @@ class App extends React.Component {
   renderNoPostsScreen() {
     let isLight = this.appState.themeClass.indexOf("theme-alt") > -1;
     return <div className="loader">
-    <div className="center-block-loader">
+      <div className="center-block-loader">
         <img className="center-block-loader img-responsive-loader" src={isLight ? lightlogo : darklogo} />
+      </div>
     </div>
-</div>
   }
 
   public render() {
     let debug = this.isDebug ? <div>DEBUG</div> : <div />
     let isLight = this.appState.themeClass.indexOf("theme-alt") > -1;
     let { CurrentPage, TotalPages, } = this.appState.forumThreadPosts;
-    console.log(this.appState.forumThreadPosts.Posts.length); 
+    console.log(this.appState.showAllPosts);
     let previousPostsButton = this.appState.forumThreadPosts.Posts.length > 0
       && !this.appState.showAllPosts ? this.renderShowAllPostsButton() : <div />;
     return this.appState.forumThreadPosts.Posts.length > 0 ? <div className={`thread-posts ${this.appState.themeClass}`}>
