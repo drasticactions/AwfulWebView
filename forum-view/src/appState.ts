@@ -50,7 +50,7 @@ export class AppState {
     }
 
     addPosts(forumThreadPosts: ForumThread) {
-        this.showAllPosts = !some(forumThreadPosts.Posts, (u) => u.HasSeen);
+        this.showAllPosts = every(forumThreadPosts.Posts, (u) => u.HasSeen) || every(forumThreadPosts.Posts, (u) => !u.HasSeen);
         this.forumThreadPosts = forumThreadPosts;
     }
 
