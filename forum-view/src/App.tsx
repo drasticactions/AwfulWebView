@@ -31,8 +31,6 @@ class App extends React.Component {
       console.log("Launch!");
       (window as any).ForumTemplate();
       (window as any).timg.scan("body");
-      (window as any).GifWrap();
-      (window as any).twttr.widgets.load();
     } catch (e) {
       this.nativeForumCommand({ Type: "error", Command: e.message });
     }
@@ -44,8 +42,6 @@ class App extends React.Component {
       console.log("Update!");
       (window as any).ForumTemplate();
       (window as any).timg.scan("body");
-      (window as any).GifWrap();
-      (window as any).twttr.widgets.load();
     } catch (e) {
       this.nativeForumCommand({ Type: "error", Command: e.message });
     }
