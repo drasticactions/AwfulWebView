@@ -1,6 +1,6 @@
 import { observable } from 'mobx';
 import { TestPost } from './testpost';
-import { some, every } from 'lodash';
+import { some, every, findIndex } from 'lodash';
 
 export class AppState {
     urlBase: string = "";
@@ -30,6 +30,11 @@ export class AppState {
             case "reset":
                 this.showAllPosts = false;
                 this.forumThreadPosts = new ForumThread();
+                break;
+            case "showIgnoredPost":
+                let post = command.Command as Post;
+                let id = findIndex(this.forumThreadPosts.Posts, { PostId: post.PostId });
+                this.forumThreadPosts.Posts.splice(id, 1, post);
                 break;
         }
     }
@@ -116,6 +121,7 @@ export class Post {
     PostIndex: number;
     HasSeen: boolean;
     IsQuoting: boolean;
+    IsIgnored: boolean;
 }
 
 export class User {

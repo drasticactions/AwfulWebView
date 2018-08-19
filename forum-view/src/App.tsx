@@ -67,6 +67,13 @@ class App extends React.Component {
     </div>
   }
 
+  renderIgnoredPostHtml(post: any) {
+    return <div className="post-body">
+      <h3><i>Jerk detected!</i></h3>
+      <button className={`btn btn-default ${this.appState.themeClass}`} onClick={() => this.showIgnoredPost(post)}>Show Ignored Post</button>
+    </div>
+  }
+
   showEditPage(post: any) {
     let json = JSON.parse(JSON.stringify(post));
     console.log(json);
@@ -77,6 +84,12 @@ class App extends React.Component {
     let json = JSON.parse(JSON.stringify(post));
     console.log(json);
     this.nativeForumCommand({ Type: "quote", Command: json });
+  }
+
+  showIgnoredPost(post: any) {
+    let json = JSON.parse(JSON.stringify(post));
+    console.log(json);
+    this.nativeForumCommand({ Type: "ignored", Command: json });
   }
 
   showAllPostsButton() {
@@ -103,7 +116,7 @@ class App extends React.Component {
     let postContainerClass = post.HasSeen ? "post-container has-seen" : "post-container";
     return <div className={postContainerClass}>
       {this.renderUser(post.User)}
-      {this.renderPostHtml(post)}
+      {post.IsIgnored ? this.renderIgnoredPostHtml(post) : this.renderPostHtml(post)}
       {this.renderPostFooter(post)}
     </div>
   }
