@@ -21,6 +21,7 @@
             "HasBeenViewed": false,
             "CanMarkAsUnread": false,
             "RepliesSinceLastOpened": 0,
+            "IsLoggedIn": true,
             "TotalPages": 862,
             "CurrentPage": 1,
             "ScrollToPost": 0,

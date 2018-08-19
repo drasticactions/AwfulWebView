@@ -3,6 +3,11 @@ html,body{
     overflow-x: hidden;
 }
 
+.theme-alt.yospos .post-container {
+    color: #57FF57 !important;
+    font-family: "consolas", "monaco", monospace !important;
+}
+
 @media only screen and (min-width: 769px) {
     .youtube-player {
         width: 640px;
@@ -30,6 +35,43 @@ video {
 body {
     background-color: #F4F3F3;
 }
+
+/* YOSPOS (Green) */
+
+.theme-alt.yospos button {
+	background-color: transparent !important;
+    color: #57FF57 !important;
+    border-color: #57FF57 !important;
+	font-family: "consolas", "monaco", monospace !important;
+}
+
+.theme-alt.yospos button:hover {
+    background-clip: border-box;
+    background-color: #C6D9FB;
+    border-color: #57FF57;
+	animation-name:animes;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-timing-function:ease-in-out;
+}
+
+.theme-alt.yospos a, .theme-alt.yospos a:hover, .theme-alt.yospos a:visited{
+    color: rgba(87, 255, 87, 0.651);
+	text-decoration: underline;
+}
+
+@keyframes animes {
+    0%{background:#57ff57;color:#000}50%{background:#000;color:#57ff57}100%{background:#57ff57;color:#000}
+}
+
+.theme-alt.yospos .post-container.has-seen {
+    background-color: #114211!important;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAARSURBVBhXYwACQSdBMGZgAAAFhgDJcI5nugAAAABJRU5ErkJggg==')!important;
+    background-repeat: repeat!important;
+}
+
+/* END YOSPOS (Green) */
 
 .logo-center {
     margin: 0 auto;
