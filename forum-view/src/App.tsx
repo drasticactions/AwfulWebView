@@ -32,7 +32,8 @@ class App extends React.Component {
       (window as any).ForumTemplate();
       (window as any).timg.scan("body");
     } catch (e) {
-      this.nativeForumCommand({ Type: "error", Command: e.message });
+      if(this.nativeForumCommand)
+        this.nativeForumCommand({ Type: "error", Command: e.message });
     }
   }
 
@@ -43,7 +44,8 @@ class App extends React.Component {
       (window as any).ForumTemplate();
       (window as any).timg.scan("body");
     } catch (e) {
-      this.nativeForumCommand({ Type: "error", Command: e.message });
+      if(this.nativeForumCommand)
+        this.nativeForumCommand({ Type: "error", Command: e.message });
     }
   }
 

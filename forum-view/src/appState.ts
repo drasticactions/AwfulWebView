@@ -50,6 +50,9 @@ export class AppState {
             case Themes.YOSPOS:
                 this.themeClass = "theme-alt yospos";
                 break;
+            case Themes.YOSPOSAmber:
+                this.themeClass = "theme-alt yospos-amber";
+                break;
         }
         document.getElementsByTagName("BODY")[0].className = this.themeClass;
     }
@@ -61,7 +64,7 @@ export class AppState {
 
     addTestPosts() {
         var testPost = new TestPost();
-        this.forumThreadOptions.Theme = Themes.Dark;
+        this.forumThreadOptions.Theme = Themes.YOSPOSAmber;
         this.setupTheme();
         this.forumThreadPosts = testPost.testPostOne.ForumThread;
         this.showAllPosts = !some(testPost.testPostTwo.Posts, (u) => u.HasSeen);
@@ -81,7 +84,8 @@ export class AppState {
 export enum Themes {
     Light,
     Dark,
-    YOSPOS
+    YOSPOS,
+    YOSPOSAmber
 }
 
 export class ForumCommand {

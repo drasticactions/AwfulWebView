@@ -61,7 +61,8 @@
     }
 
     var ToCSharp = function (command) {
-      window.external.notify(JSON.stringify(command));
+      if(window.external.notify)
+        window.external.notify(JSON.stringify(command));
     }
   </script>
 </body>
