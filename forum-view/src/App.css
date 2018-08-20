@@ -3,6 +3,18 @@ html,body{
     overflow-x: hidden;
 }
 
+blockquote {
+    margin: 0;
+}
+
+.theme-alt blockquote {
+    border-left: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+blockquote {
+    border-left: 5px solid rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (min-width: 769px) {
     .youtube-player {
         width: 640px;
