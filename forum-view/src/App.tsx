@@ -29,8 +29,14 @@ class App extends React.Component {
   componentDidMount() {
     try {
       console.log("Launch!");
-      (window as any).ForumTemplate();
-      (window as any).timg.scan("body");
+      try {
+        (window as any).ForumTemplate();
+        (window as any).timg.scan("body");
+      } catch (error) {
+        
+      }
+      if (this.nativeForumCommand)
+        this.nativeForumCommand({ Type: "loaded", Command: '' });
     } catch (e) {
       if(this.nativeForumCommand)
         this.nativeForumCommand({ Type: "error", Command: e.message });
@@ -43,6 +49,8 @@ class App extends React.Component {
       console.log("Update!");
       (window as any).ForumTemplate();
       (window as any).timg.scan("body");
+      if (this.nativeForumCommand)
+        this.nativeForumCommand({ Type: "updated", Command: '' });
     } catch (e) {
       if(this.nativeForumCommand)
         this.nativeForumCommand({ Type: "error", Command: e.message });

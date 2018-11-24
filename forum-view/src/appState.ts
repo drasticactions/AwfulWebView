@@ -24,6 +24,9 @@ export class AppState {
             case "addTestPosts2":
                 this.addTestPosts2();
                 break;
+            case "addTestPosts3":
+                this.addTestPosts3();
+                break;
             case "addPosts":
                 this.addPosts(command.Command);
                 break;
@@ -78,6 +81,15 @@ export class AppState {
         this.forumThreadPosts = testPost.testPostOne.ForumThread;
         this.showAllPosts = !some(testPost.testPostOne.Posts, (u) => u.HasSeen);
         this.forumThreadPosts.Posts = testPost.testPostOne.Posts;
+    }
+
+    addTestPosts3() {
+        var testPost = new TestPost();
+        this.forumThreadOptions.Theme = Themes.Light;
+        this.setupTheme();
+        this.forumThreadPosts = testPost.testPostThree;
+        this.showAllPosts = !some(testPost.testPostThree.Posts, (u) => u.HasSeen);
+        this.forumThreadPosts.Posts = testPost.testPostThree.Posts;
     }
 }
 

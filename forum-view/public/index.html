@@ -60,6 +60,11 @@
       window.ForumTemplate();
     }
 
+    var AddTestPosts3 = function () {
+      window.app.appState.forumCommand({ "Type": "addTestPosts3", "Command": null });
+      window.ForumTemplate();
+    }
+
     var ToCSharp = function (command) {
       if(window.external.notify)
         window.external.notify(JSON.stringify(command));
